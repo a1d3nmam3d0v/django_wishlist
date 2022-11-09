@@ -1,0 +1,11 @@
+<h2>{% for letter in 'About' %} {{ letter }} {% endfor %}</h2>
+<div>
+    <p>{{ about }}</p>
+    <p>Website by {{ author }}</p>
+
+    {% if author %}
+    <p>^ author</p>
+    {% else %}
+    <p>no author?</p>
+    {% endif %}
+</div>
