@@ -1,25 +1,26 @@
-<h1>Travel Wishlist</h1>
+{% extends 'travel_wishlist/base.html' %} {% block content %}
+<nav>
+    <mark>Places I want to go</mark>
+    <a href="{% url 'places_visited' %}">Places I've been</a>
+</nav>
 
 <form method="POST" action="{% url 'place_list' %}">
-    {% csrf_token %} {{ new_place_form }}
-    <button type="submit">Add</button>
+    {% csrf_token %} {{ new_place_form }}<br />
+    <button class="add-bttn" type="submit">Add</button>
 </form>
 
-<h2>Places I want to go:</h2>
-{% for place in places %}
-<div>
-    {{ place.name }}
-    <form method="POST" action="{% url 'place_was_visited' place.pk %}">
-        {% csrf_token %}
-        <button>Visited!</button>
-    </form>
+<div class="places-wrapper">
+    {% for place in places %}
+    <div class="place">
+        {{ place.name }}
+        <form method="POST" action="{% url 'place_was_visited' place.pk %}">
+            {% csrf_token %}
+            <button class="visited-btn"></button>
+        </form>
+    </div>
+
+    {% empty %}
+    <p>Wishlist is empty.</p>
+    2 {% endfor %}
 </div>
-
-{% empty %}
-<p>Wishlist is empty.</p>
-
-{% endfor %}
-
-<br />
-
-<a href="{% url 'places_visited' %}">Been there done that</a>
+{% endblock %}

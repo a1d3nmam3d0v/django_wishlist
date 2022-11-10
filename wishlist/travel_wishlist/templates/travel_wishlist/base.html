@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Wishlist</title>
+        <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css" />
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+        <link rel="stylesheet" href="https://use.typekit.net/eyd3oer.css" />
+
+        <style>
+            body {
+                font-family: synthese, sans-serif;
+                background-color: azure;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 3rem;
+            }
+
+            mark {
+                padding: 0.5rem 1rem;
+                background-color: rgba(234, 255, 0, 0.66);
+                margin-bottom: 1rem;
+            }
+
+            ul {
+                list-style-type: '✈';
+            }
+            button {
+                font-family: synthese, sans-serif;
+            }
+
+            .visited-btn:after {
+                content: 'Not visited';
+            }
+            .visited-btn:hover:after {
+                content: "I've visited";
+            }
+
+            .places-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 3rem 0;
+                padding: 2rem;
+                max-width: 500px;
+            }
+
+            .place {
+                display: block;
+                padding: 1rem;
+                text-align: center;
+            }
+
+            label {
+                display: inline-block;
+                margin-right: 0.5rem;
+            }
+
+            .add-bttn {
+                width: 50%;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>My Travels</h1>
+        </header>
+        <hr />
+
+        {% block content %} {% endblock %}
+        <footer><a href="{% url 'place_list' %}">Wishlist</a> and <a href="{% url 'places_visited' %}">Checklist</a> built with Django.</footer>
+    </body>
+</html>
