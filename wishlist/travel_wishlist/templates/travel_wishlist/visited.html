@@ -1,15 +1,20 @@
 {% extends 'travel_wishlist/base.html' %} {% block content %}
 <nav>
-    <mark>Where I've been</mark>
-    <a href="{% url 'place_list' %}">Where I want to go</a>
+    <mark><u>Where I've been</u><br /><span class="arrow">&searr; </span></mark>
+    <a href="{% url 'place_list' %}">
+        Where I want to go
+        <span class="arrow">&rarr;</span>
+    </a>
 </nav>
 {% if visited %}
-<ul>
-    {% for place in visited %}
-    <li>&nbsp;{{ place.name }}</li>
+<div class="places-wrapper">
+    <ul>
+        {% for place in visited %}
+        <span class="place-name"><li>&nbsp;{{ place.name }}</li></span>
 
-    {% endfor %}
-</ul>
+        {% endfor %}
+    </ul>
+</div>
 
 {% else %}
 <p>No places visited (yet)</p>
