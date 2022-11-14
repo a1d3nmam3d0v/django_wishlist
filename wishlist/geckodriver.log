@@ -1,0 +1,55 @@
+1668404855208	geckodriver	INFO	Listening on 127.0.0.1:61162
+1668404858280	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "61163" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\aiden\\AppData\\Local\\Temp\\rust_mozprofilemqebvC"
+1668404859271	Marionette	INFO	Marionette enabled
+1668404859277	Marionette	INFO	Listening on port 61174
+Read port: 61174
+WebDriver BiDi listening on ws://127.0.0.1:61163
+1668404859424	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\aiden\\AppData\\Local\\Temp\\rust_mozprofilemqebvC\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61163/devtools/browser/2574803f-a0e2-457d-8137-a48d5482905d
+1668404862604	Marionette	INFO	Stopped listening on port 61174
+JavaScript error: resource://services-settings/Utils.jsm, line 239: TypeError: NetworkError: Network request failed
+1668406398810	geckodriver	INFO	Listening on 127.0.0.1:61979
+1668406401857	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "61980" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\aiden\\AppData\\Local\\Temp\\rust_mozprofileXubsVm"
+1668406402272	Marionette	INFO	Marionette enabled
+1668406402280	Marionette	INFO	Listening on port 61989
+Read port: 61989
+WebDriver BiDi listening on ws://127.0.0.1:61980
+1668406402408	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\aiden\\AppData\\Local\\Temp\\rust_mozprofileXubsVm\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61980/devtools/browser/9e265462-72da-4f28-a9b3-956e0777d352
+1668406405545	Marionette	INFO	Stopped listening on port 61989
+JavaScript error: resource://services-settings/Utils.jsm, line 239: TypeError: NetworkError: Network request failed
+1668406409213	geckodriver	INFO	Listening on 127.0.0.1:62029
+1668406412286	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "62030" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\aiden\\AppData\\Local\\Temp\\rust_mozprofileh3LLxE"
+1668406412702	Marionette	INFO	Marionette enabled
+1668406412709	Marionette	INFO	Listening on port 62041
+Read port: 62041
+WebDriver BiDi listening on ws://127.0.0.1:62030
+1668406412863	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\aiden\\AppData\\Local\\Temp\\rust_mozprofileh3LLxE\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62030/devtools/browser/e0d397ed-d6af-48c7-a3d4-1dd49c38bf05
+1668406416020	Marionette	INFO	Stopped listening on port 62041
+JavaScript error: resource://services-settings/RemoteSettingsWorker.jsm, line 145: Error: Shutdown, aborting read-only worker requests.
+1668407220565	geckodriver	INFO	Listening on 127.0.0.1:62240
+1668407223609	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "62241" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\aiden\\AppData\\Local\\Temp\\rust_mozprofilePMR9zc"
+1668407224011	Marionette	INFO	Marionette enabled
+1668407224017	Marionette	INFO	Listening on port 62255
+Read port: 62255
+WebDriver BiDi listening on ws://127.0.0.1:62241
+1668407224141	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\aiden\\AppData\\Local\\Temp\\rust_mozprofilePMR9zc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62241/devtools/browser/0436a344-56c0-4d89-b932-f28d1b290007
+1668407227726	Marionette	INFO	Stopped listening on port 62255
+JavaScript error: resource://services-settings/Utils.jsm, line 239: TypeError: NetworkError: Network request failed
+1668407230912	geckodriver	INFO	Listening on 127.0.0.1:62300
+1668407233935	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "62301" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\aiden\\AppData\\Local\\Temp\\rust_mozprofileVLcEYg"
+1668407234328	Marionette	INFO	Marionette enabled
+1668407234333	Marionette	INFO	Listening on port 62311
+Read port: 62311
+WebDriver BiDi listening on ws://127.0.0.1:62301
+1668407234457	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\aiden\\AppData\\Local\\Temp\\rust_mozprofileVLcEYg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62301/devtools/browser/a97c31de-6993-4ca5-9b4e-abeffbde9105
+1668407237501	Marionette	INFO	Stopped listening on port 62311
+JavaScript error: resource://services-settings/RemoteSettingsWorker.jsm, line 145: Error: Shutdown, aborting read-only worker requests.

@@ -14,14 +14,14 @@
 <div class="places-wrapper">
     <form class="wishlist-form" method="POST" action="{% url 'place_list' %}">
         {% csrf_token %} {{ new_place_form }}
-        <div><button class="add-btn" type="submit">Add</button></div>
+        <div><button id="add-new-place" class="add-btn" type="submit">Add</button></div>
     </form>
     {% for place in places %}
     <div class="place-name">
-        {{ place.name }}
+        <span id="place-name-{{ place.pk }}"> {{ place.name }}</span>
         <form method="POST" action="{% url 'place_was_visited' place.pk %}">
             {% csrf_token %}
-            <button class="visited-btn"></button>
+            <button id="visited-button-{{ place.pk }}" class="visited-btn"></button>
         </form>
     </div>
 
