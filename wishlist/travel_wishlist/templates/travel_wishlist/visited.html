@@ -1,6 +1,6 @@
 {% extends 'travel_wishlist/base.html' %} {% block content %}
 <nav>
-    <mark><u>Where I've been</u><br /><span class="arrow">&searr; </span></mark>
+    <mark> <span class="arrow">&darr;</span><u>Where I've been</u></mark>
     <a href="{% url 'place_list' %}">
         Where I want to go
         <span class="arrow">&rarr;</span>
@@ -10,7 +10,9 @@
 <div class="places-wrapper">
     <ul>
         {% for place in visited %}
-        <span class="place-name"><li>&nbsp;{{ place.name }}</li></span>
+        <span class="place-name"
+            ><li>&nbsp;<a href="{% url 'place_details' place.pk %}">{{ place.name }}</a></li></span
+        >
 
         {% endfor %}
     </ul>

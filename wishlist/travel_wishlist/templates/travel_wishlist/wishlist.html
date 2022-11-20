@@ -2,8 +2,9 @@
 
 <nav>
     <mark>
+        <span class="arrow">&darr;</span>
+
         <u>Where I want to go</u><br />
-        <span class="arrow">&searr;</span>
     </mark>
     <a href="{% url 'places_visited' %}"
         >Where I've been
@@ -18,10 +19,10 @@
     </form>
     {% for place in places %}
     <div class="place-name">
-        <span id="place-name-{{ place.pk }}"> {{ place.name }}</span>
+        <span id="place-name-{{ place.pk }}"> <a href="{% url 'place_details' place.pk %}">{{ place.name }}</a></span>
         <form method="POST" action="{% url 'place_was_visited' place.pk %}">
             {% csrf_token %}
-            <button id="visited-button-{{ place.pk }}" class="visited-btn"></button>
+            <button id="visited-button-{{ place.pk }}" class="visited-btn" type="submit"></button>
         </form>
     </div>
 
