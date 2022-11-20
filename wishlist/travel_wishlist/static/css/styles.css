@@ -1,4 +1,4 @@
-/* html,
+html,
 nav,
 header,
 body {
@@ -6,7 +6,6 @@ body {
 }
 
 body {
-    padding: 0;
     height: 100%;
     font-family: campaign, sans-serif;
 }
@@ -93,8 +92,6 @@ button {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 1rem;
-    margin-right: 1rem;
     background-color: gainsboro;
     padding-bottom: 1rem;
     border-radius: 0.25rem;
@@ -140,10 +137,8 @@ footer {
     text-align: center;
 }
 
-footer p {
-    text-indent: 0.5rem;
-}
+
 footer a {
     color: darkgreen;
     background-color: #7fffd463;
-} */
+}
